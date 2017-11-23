@@ -26,3 +26,19 @@ function `!v expand('%:t:r:r')`_menu_delete($menu) {
   ${1}
 }
 endsnippet
+
+snippet hook_menu "hook_menu"
+/**
+ * Implements hook_menu().
+ */
+function hook_menu() {
+  $items['${1}'] = array(
+    'title' => '${2}',
+    'page callback' => '${3}',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+endsnippet

@@ -195,3 +195,12 @@ $form['${1}'] = array(
   ${2}
 );
 endsnippet
+
+snippet	form_fun "form_fun"
+/**
+ * Form callback to ${1}
+ */
+function `!v expand('%:t:r:r')`_${2}($form, &$form_state) {
+	// ${3} code here
+}
+endsnippet
