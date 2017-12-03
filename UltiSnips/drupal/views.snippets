@@ -8,3 +8,36 @@ function `!v expand('%:t:r:r')`_views_ajax_data_alter(&$commands, &$view) {
 	$0
 }
 endsnippet
+
+snippet hook_views_pre_render "hook_views_pre_render"
+/**
+ * Implements hook_views_pre_render().
+ */
+function `!v expand('%:t:r:r')`_views_pre_render(&$view) {
+  if ($view->name == '${1:view_name}' && $view->current_display == '${2:display_id}') {
+		$3
+	}
+}
+endsnippet
+
+snippet hook_views_pre_execute "hook_views_pre_execute"
+/**
+ * Implements hook_views_pre_execute().
+ */
+function `!v expand('%:t:r:r')`_views_pre_execute(&$view) {
+  if ($view->name == '${1:view_name}' && $view->current_display == '${2:display_id}') {
+		$3
+	}
+}
+endsnippet
+
+snippet hook_views_post_execute "hook_views_post_execute"
+/**
+ * Implements hook_views_post_execute().
+ */
+function `!v expand('%:t:r:r')`_views_post_execute(&$view, &$output, &$cache) {
+  if ($view->name == '${1:view_name}' && $view->current_display == '${2:display_id}') {
+		$3
+	}
+}
+endsnippet
