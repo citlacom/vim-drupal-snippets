@@ -2,8 +2,8 @@ snippet hook_ENTITY_TYPE_insert "hook_ENTITY_TYPE_insert"
 /**
  * Implements hook_ENTITY_TYPE_insert().
  */
-function hook_ENTITY_TYPE_insert(EntityInterface $entity) {
-  ${1}
+function `!v expand('%:t:r:r')`_${1}_insert(EntityInterface $entity) {
+  ${2}
 }
 endsnippet
 
@@ -11,8 +11,8 @@ snippet hook_ENTITY_TYPE_delete "hook_ENTITY_TYPE_delete"
 /**
  * Implements hook_ENTITY_TYPE_delete().
  */
-function hook_ENTITY_TYPE_delete(EntityInterface $entity) {
-  ${1}
+function `!v expand('%:t:r:r')`_${1}_delete(EntityInterface $entity) {
+  ${2}
 }
 endsnippet
 
@@ -20,8 +20,8 @@ snippet hook_ENTITY_TYPE_create "hook_ENTITY_TYPE_create"
 /**
  * Implements hook_ENTITY_TYPE_create().
  */
-function hook_ENTITY_TYPE_create(EntityInterface $entity) {
-  ${1}
+function `!v expand('%:t:r:r')`_${1}_create(EntityInterface $entity) {
+  ${2}
 }
 endsnippet
 
@@ -29,7 +29,7 @@ snippet hook_ENTITY_TYPE_update "hook_ENTITY_TYPE_update"
 /**
  * Implements hook_ENTITY_TYPE_update().
  */
-function hook_ENTITY_TYPE_update(EntityInterface $entity) {
-  ${1}
+function `!v expand('%:t:r:r')`_${1}_update(EntityInterface $entity) {
+  ${2}
 }
 endsnippet
